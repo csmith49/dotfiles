@@ -13,7 +13,9 @@ brew tap homebrew/bundle
 brew bundle
 
 # symlink dotfiles
-ln -s ./.bash_profile ~/.bash_profile
+rm -rf $HOME/.bash_profile
+ln -s $HOME/Documents/dotfiles/.bash_profile $HOME/.bash_profile
 
 # update mac os preferences
+echo "Updating OSX settings..."
 source .macos
