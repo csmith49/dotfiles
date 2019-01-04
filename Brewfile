@@ -15,6 +15,11 @@ brew 'opam'
 cask 'docker'
 cask 'discord'
 cask 'slack'
+cask 'spotify'
+
+# fonts
+cask 'font-fira-code'
+cask 'font-anonymous-pro'
 
 # app store installs
 mas 'Bear', id: 1091189122
