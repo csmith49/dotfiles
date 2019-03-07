@@ -6,6 +6,7 @@ tap 'caskroom/versions'
 # utilities
 brew 'coreutils'
 brew 'mas'
+brew 'tag'
 
 # development
 brew 'python'

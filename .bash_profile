@@ -49,3 +49,5 @@ symbol="⊨ "
 # Prompt
 export PS1="\[${MAGENTA}\]\A \[$RESET\]in \[$GREEN\]\w\[$RESET\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$RESET\]\n$symbol\[$RESET\]"
 export PS2="\[$ORANGE\]→ \[$RESET\]"
+
+eval `opam config env`
