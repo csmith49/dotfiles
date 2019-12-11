@@ -51,3 +51,8 @@ export PS1="\[${MAGENTA}\]\A \[$RESET\]in \[$GREEN\]\w\[$RESET\]\$([[ -n \$(git 
 export PS2="\[$ORANGE\]→ \[$RESET\]"
 
 eval `opam config env`
+
+# Homebrew fixin'
+export PATH=/usr/local/bin:$PATH
+# Python fixin'
+export PYTHONPATH=~/Documents/code/logic:~/Documents/code/clevr:$PYTHONPATH
