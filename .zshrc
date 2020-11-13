@@ -23,3 +23,5 @@ on_if_in_git() {
 NEWLINE=$'\n'
 
 PROMPT='┌─ %F{9}%T%f in %F{190}%~%f$(on_if_in_git)%F{141}$(git_branch)%f ─╼${NEWLINE}└╼ '
+
+export PATH="/usr/local/opt/avr-gcc@7/bin:$PATH"
