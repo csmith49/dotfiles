@@ -1,3 +1,6 @@
+# set environments
+eval $(/opt/homebrew/bin/brew shellenv)
+
 # globbing is case insensitive
 setopt NO_CASE_GLOB
 
@@ -7,9 +10,6 @@ setopt AUTO_CD
 # corrections when things are mistyped
 setopt CORRECT
 setopt CORRECT_ALL
-
-# make sure ocaml works fine
-eval `opam config env`
 
 # set up of the prompt
 setopt PROMPT_SUBST
@@ -22,6 +22,6 @@ on_if_in_git() {
 }
 NEWLINE=$'\n'
 
-PROMPT='┌─ %F{9}%T%f in %F{190}%~%f$(on_if_in_git)%F{141}$(git_branch)%f ─╼${NEWLINE}└╼ '
+PROMPT='┌─ %F{red}%T%f in %F{yellow}%~%f$(on_if_in_git)%F{green}$(git_branch)%f ─╼${NEWLINE}└╼ '
 
 export PATH="/usr/local/opt/avr-gcc@7/bin:$PATH"
