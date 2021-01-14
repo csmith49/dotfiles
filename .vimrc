@@ -40,7 +40,7 @@ let g:indentLine_char = '│' " sets the indent lines to use <PIPE>
 let g:indentLine_color_term = 239
 
 " for gitgutter plugin
-highlight SignColumn guibg=#FFFFFF ctermbg=0
-highlight GitGutterAdd guifg=#FFFFFF ctermfg=2
-highlight GitGutterChange guifg=#FFFFFF ctermfg=3
-highlight GitGutterDelete guifg=#FFFFFF ctermfg=1
+highlight SignColumn ctermbg=0
+highlight GitGutterAdd ctermbg=0 ctermfg=2
+highlight GitGutterChange ctermbg=0 ctermfg=3
+highlight GitGutterDelete ctermbg=0 ctermfg=1
