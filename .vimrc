@@ -1,17 +1,14 @@
 " basic behavior
 
 set number                  " show line numbers
+set cursorline              " highlight the current cursor
 set wrap                    " wrap lines
 set encoding=utf-8          " sets encoding
 set lazyredraw              " only draws screen when needed
 set showmatch               " highlight matching brackets
 set ruler                   " show line and colnum of cursor
 set visualbell              " no audible bell
-
-" key bindings
-
-nmap j gj                   " going up doesn't skip wrapped lines
-nmap k gk                   " going down doesn't skip wrapped lines
+set backspace=indent,eol,start
 
 " files
 syntax enable
@@ -29,18 +26,11 @@ set autoindent              " copies indent from previous line
 set incsearch               " search as chars are entered
 set hlsearch                " highlight matches
 
-" status bar
-set laststatus=2            " necessary for lightline
-set noshowmode              " removes mode (covered by lightline)
-
 " appearance
 
-" for indentline plugin
-let g:indentLine_char = '│' " sets the indent lines to use <PIPE>
-let g:indentLine_color_term = 239
+colorscheme hardcore        " uses custom color scheme
 
-" for gitgutter plugin
-highlight SignColumn ctermbg=0
-highlight GitGutterAdd ctermbg=0 ctermfg=2
-highlight GitGutterChange ctermbg=0 ctermfg=3
-highlight GitGutterDelete ctermbg=0 ctermfg=1
+set fillchars+=vert:│
+" for indentline plugin
+let g:indentLine_char = '│'
+let g:indentLine_color_term = 239
