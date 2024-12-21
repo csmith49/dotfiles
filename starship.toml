@@ -1,0 +1,24 @@
+format = """
+┌─ $time @ $directory$git_branch$python ─╼
+└╼ """
+
+scan_timeout=10
+add_newline=false
+
+[time]
+disabled = false
+format = "[$time]($style)"
+time_format="%R"
+
+[directory]
+truncation_length = 1
+format = "[$path]($style)"
+truncate_to_repo = false
+
+[git_branch]
+format = " on [$branch]($style)"
+
+[python]
+format = " using [$virtualenv]($style)"
+detect_files = []
+detect_extensions = []
